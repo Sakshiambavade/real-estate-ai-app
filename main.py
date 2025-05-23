@@ -10,7 +10,7 @@ from langchain.chains import LLMChain, create_sql_query_chain
 
 # Load the local SQLite database file
 def load_db():
-    return SQLDatabase.from_uri("sqlite:///real_estate.db")
+    return SQLDatabase.from_uri("sqlite:///real_estate(1).db")
 
 # Create the SQL generation chain using Groq's Gemma model
 def chain_create(db):
